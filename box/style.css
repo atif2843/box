@@ -1,0 +1,71 @@
+div.slideup{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    width: 100%;
+    height: 45.8vw;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    opacity: 1;
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.btn1{
+    position: absolute;
+    top: 300px;
+    left: 42vw;
+    width: 400px;
+    height: 100px;
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: white;
+    box-shadow: 0px 8px 15px #c2ce9c;
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+.btn1:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+.text{
+    opacity: 1;
+    transition: opcity 1s linear;
+}
+.btntxt{
+    position: absolute;
+    top: 25px;
+    left: 11px;
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+}
+.main{
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ background-blend-mode: multiply,multiply;
+    width: 0;
+    height: 48.8vw;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    display: block;
+    /*transition: opcity 1s linear;*/
+}
+.main2{
+    display: none;
+}
+.center{
+    position: absolute;
+    top:300px;
+    left:42vw;
+}
+input[type=text]{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+}

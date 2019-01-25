@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box company</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Tangerine" rel="stylesheet">
+</head>
+<body>
+    <div onload="checkout()" class="slideup" id="moveup"><a onclick="onlre()" class="btn1" id="btnhd"><span class="btntxt">Please Click Here To Enter</span></a></div>
+    <div class="main main2" id="main">
+        <input type="text" value="" oninput="infunction()" id="myinput">
+        <h1 class="btntxt center" id="demo"></h1>
+    </div>
+    
+    
+    
+    <script>
+        
+    var x = document.getElementById("btnhd");
+    var a=document.getElementById("main");
+    function onlre(){
+    document.getElementById("moveup").style.height="0px";
+    document.getElementById("moveup").style.transition="height 1s ease-in-out";
+    document.getElementById("btnhd").style.opacity="0";
+    document.getElementById("btnhd").style.transition="opacity 1s ease-in-out";
+    a.className= a.className.replace(/\bmain2\b/g, "");
+    document.getElementById("moveup").addEventListener("transitionend", myFunction);
+}
+function myFunction() {
+    this.style.visibility = "hidden";
+    a.style.width="100%";
+    a.style.transition="all 1s ease-in-out";
+    a.style.visibility="visible";   
+}
+
+function infunction(){
+    var oninpu =document.getElementById("myinput").value;
+    var para =document.getElementById("demo");
+    para.innerHTML="Greeting From " + oninpu;
+}
+window.onload = function checkout() {
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+        a.className= a.className.replace(/\bmain\b/g, "");
+        debugger;
+        localStorage.setItem("hasCodeRunBefore", true);
+    }
+}
+
+
+    </script>
+</body>
+</html>
