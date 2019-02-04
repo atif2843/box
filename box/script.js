@@ -21,7 +21,8 @@ var nvabar=document.getElementById("navbar");
 var navbarc=document.getElementsByClassName("navbarc");
 function openmenu(){
         navmenu.style.width="48vw";
-        navmenu.style.transition="width 1s ease-in-out cubic-bezier(0.45, 0.05, 0.23, 1.18) 1   s"; 
+        navmenu.style.transition="width 1s";
+        navmenu.style.transitionTimingFunction="cubic-bezier(0.57, -0.55, 0.26, 1.54) 0s";
         nvabar.style.transform="scale(1)";
         nvabar.style.transition="transform 1s  ease-in-out";
 }
@@ -32,7 +33,8 @@ function closemenu(){
         nvabar.style.transform="scale(0)";
         nvabar.style.transition="transform 1s";
         navmenu.style.width="0vw";
-        navmenu.style.transition="width 1s ease-in-out cubic-bezier(0.45, 0.05, 0.23, 1.18) 1s";
+        navmenu.style.transition="width 1s";
+        navmenu.style.transitionTimingFunction="cubic-bezier(0.57, -0.55, 0.26, 1.54) 0s";
         navbar.addEventListener("transitionend", myliclsFunction); 
 }
     function myliclsFunction(){
