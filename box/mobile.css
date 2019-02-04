@@ -1,0 +1,104 @@
+@media only screen and (max-width: 768px){
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .slideup{
+        display: none;
+    }
+    .main{
+        visibility: visible;
+        background-color: white;
+        width: 100%;
+        background: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .main2{
+        display: block;
+        height: 100%;
+    }
+    .menubtn{
+        display: block;
+        font-size: 6vh;
+        margin-top: 0;
+        position: relative;
+        top: 25px;
+        left: 30px;
+    }
+    .header{
+        float: left;
+        position: relative;
+        left: 35vw;
+        font-size: 6vw;
+        top: -80px;
+
+    }
+    .mainhead{
+        background-color: aquamarine;
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        
+    }
+    .contentsec{ 
+        position: absolute;
+        top: 12vw;
+                              
+    }
+    .loremtxt{
+        float: left;
+        margin: 50px;
+        font-size: 30px;
+        
+    }
+    }
+    .navmenu{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color:black;
+        opacity: 0.9;
+        width: 0vw;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+    ul.navbar{
+        position: absolute;
+        top: 7vw;
+        list-style-type: none;
+        left: -20px;
+        transform: scale(0);
+        
+    }
+    ul.navbar li{
+        text-decoration: none;
+        font-size: 5vw;
+        padding:30px;
+        text-align: center;
+        width: 100%;
+        padding-left: 81px;
+        position: relative;
+        right: 20px;
+        opacity: 1;
+    }
+    ul.navbar>li>a{
+        color:rgb(212, 208, 208);
+        text-decoration: none;
+        text-align: center;
+        position: relative;
+        right: 40px;
+    }
+    
+    .menuclsbtn{
+        color:white;
+        font-size: 50px;
+        float: right;
+        margin: 10px;
+    }
+}
+    
